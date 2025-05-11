@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Online Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">EduLearn</a>
+            </div>
+            <div class="search-bar">
+                <form>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Search for anything">
+                </form>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Teach on EduLearn</a></li>
+                    <li><a href="#">My Learning</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#" class="btn btn-secondary" id="login-btn">Log in</a></li>
+                    <li><a href="#" class="btn btn-primary" id="signup-btn">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learn in-demand skills</h1>
+                <p>Join millions of learners worldwide gaining the skills they need to succeed</p>
+                <div class="search-box">
+                    <input type="text" placeholder="What do you want to learn?">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2>Top Categories</h2>
+            <div class="category-grid">
+                <div class="category-card" data-description="Learn to build websites, web applications, and software. Master programming languages like HTML, CSS, JavaScript, Python, and more.">
+                    <i class="fas fa-code"></i>
+                    <h3>Development</h3>
+                    <div class="category-tooltip">
+                        <p>Learn to build websites, web applications, and software. Master programming languages like HTML, CSS, JavaScript, Python, and more.</p>
+                    </div>
+                </div>
+                <div class="category-card" data-description="Develop essential business skills in leadership, management, strategy, operations, entrepreneurship, and finance to boost your career.">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business</h3>
+                    <div class="category-tooltip">
+                        <p>Develop essential business skills in leadership, management, strategy, operations, entrepreneurship, and finance to boost your career.</p>
+                    </div>
+                </div>
+                <div class="category-card" data-description="Master creative tools and techniques in graphic design, UI/UX, illustration, 3D modeling, and animation to bring your creative visions to life.">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design</h3>
+                    <div class="category-tooltip">
+                        <p>Master creative tools and techniques in graphic design, UI/UX, illustration, 3D modeling, and animation to bring your creative visions to life.</p>
+                    </div>
+                </div>
+                <div class="category-card" data-description="Learn digital marketing strategies including social media, content creation, SEO, analytics, and advertising to reach your target audience.">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Marketing</h3>
+                    <div class="category-tooltip">
+                        <p>Learn digital marketing strategies including social media, content creation, SEO, analytics, and advertising to reach your target audience.</p>
+                    </div>
+                </div>
+                <div class="category-card" data-description="Explore IT fundamentals, cybersecurity, cloud computing, networking, and system administration to advance in the tech industry.">
+                    <i class="fas fa-laptop"></i>
+                    <h3>IT & Software</h3>
+                    <div class="category-tooltip">
+                        <p>Explore IT fundamentals, cybersecurity, cloud computing, networking, and system administration to advance in the tech industry.</p>
+                    </div>
+                </div>
+                <div class="category-card" data-description="Learn photography fundamentals, composition, lighting, editing, and specialized techniques for portraits, landscapes, and commercial photography.">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photography</h3>
+                    <div class="category-tooltip">
+                        <p>Learn photography fundamentals, composition, lighting, editing, and specialized techniques for portraits, landscapes, and commercial photography.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section class="popular-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Courses</h2>
+                <a href="#" class="view-all">View all</a>
+            </div>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Web Development Course thumbnail">
+                    </div>
+                    <div class="course-details">
+                        <h3>Complete Web Development Bootcamp</h3>
+                        <p class="instructor">John Doe</p>
+                        <div class="rating">
+                            <span class="stars">4.8</span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(2,045)</span>
+                        </div>
+                        <div class="price">$94.99</div>
+                        <div class="bestseller">Bestseller</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Data Science Course thumbnail">
+                    </div>
+                    <div class="course-details">
+                        <h3>Data Science A-Z: Real-Life Data Science</h3>
+                        <p class="instructor">Jane Smith</p>
+                        <div class="rating">
+                            <span class="stars">4.6</span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(1,732)</span>
+                        </div>
+                        <div class="price">$89.99</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1591453089816-0fbb971b454c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Machine Learning Course thumbnail">
+                    </div>
+                    <div class="course-details">
+                        <h3>Complete Machine Learning & AI Bootcamp</h3>
+                        <p class="instructor">Robert Johnson</p>
+                        <div class="rating">
+                            <span class="stars">4.7</span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(3,211)</span>
+                        </div>
+                        <div class="price">$119.99</div>
+                        <div class="hot">Hot & New</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Digital Marketing Course thumbnail">
+                    </div>
+                    <div class="course-details">
+                        <h3>Digital Marketing Masterclass</h3>
+                        <p class="instructor">Emily Parker</p>
+                        <div class="rating">
+                            <span class="stars">4.5</span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(1,546)</span>
+                        </div>
+                        <div class="price">$84.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <i class="fas fa-laptop"></i>
+                <h3>Learn Anywhere</h3>
+                <p>Access courses on mobile, tablet or desktop - your learning is synced across all devices.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-certificate"></i>
+                <h3>Certified Courses</h3>
+                <p>Earn certificates recognized by industry leaders and boost your professional profile.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry experts who have real-world experience in their fields.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become Instructor Section -->
+    <section class="become-instructor">
+        <div class="container">
+            <div class="instructor-content">
+                <h2>Become an instructor</h2>
+                <p>Join thousands of instructors teaching millions of students on EduLearn. We provide the tools and resources to help you succeed.</p>
+                <a href="#" class="btn btn-primary">Start Teaching Today</a>
+            </div>
+            <div class="instructor-image">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Become an instructor">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The courses on EduLearn helped me transition into a new career. The quality of instruction is exceptional.</p>
+                    </div>
+                    <div class="student">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Student">
+                        <div class="student-info">
+                            <h4>Michael Brown</h4>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>I've taken several courses on EduLearn and each one has been worth every penny. The instructors are knowledgeable and engaging.</p>
+                    </div>
+                    <div class="student">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Student">
+                        <div class="student-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Marketing Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>EduLearn</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="#">Get the app</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>More</h3>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookie settings</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Help and support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>© 2023 EduLearn, Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Log In to Your Account</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required placeholder="Your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required placeholder="Your password">
+                        <div class="password-options">
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                </form>
+                <div class="social-login">
+                    <p>Or log in with:</p>
+                    <div class="social-buttons">
+                        <button class="btn btn-social btn-google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button class="btn btn-social btn-facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>Don't have an account? <a href="#" id="switch-to-signup">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sign Up for EduLearn</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-fullname">Full Name</label>
+                        <input type="text" id="signup-fullname" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required placeholder="Your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required placeholder="Create a password">
+                        <p class="password-hint">Must be at least 8 characters long</p>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms-agree" required>
+                            <label for="terms-agree">I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                </form>
+                <div class="social-login">
+                    <p>Or sign up with:</p>
+                    <div class="social-buttons">
+                        <button class="btn btn-social btn-google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button class="btn btn-social btn-facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#" id="switch-to-login">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
